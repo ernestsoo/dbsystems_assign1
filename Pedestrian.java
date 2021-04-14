@@ -15,6 +15,9 @@ public class Pedestrian{
     public Pedestrian(){
 
     }
+    /**
+     * This function will format the data for bulk import of Derby.
+     */
     public void processDataDerby(){
 
         try {
@@ -62,6 +65,9 @@ public class Pedestrian{
 
      }
 
+     /**
+     * This function will format the data for bulk import of MongoDB.
+     */
      public void processDataMongo(){
 
         try {
@@ -105,8 +111,11 @@ public class Pedestrian{
            ex.printStackTrace();
        }
 
-     }
+    }
 
+    /**
+    * This function will remove duplicate rows in the Sensors data.
+    */
     public void makeSensorsUnique(){
         List<Integer> sensors = new ArrayList<Integer>();
 
@@ -145,6 +154,9 @@ public class Pedestrian{
 
      }
 
+    /**
+    * This function will extract 2 columns into a new file (Sensor).
+    */
      public void dataToSensors(){
         HashMap<String, String> sensors = new HashMap<String, String>();
 
