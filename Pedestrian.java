@@ -196,9 +196,9 @@ public class Pedestrian{
      public static void main(String[] args){
          Pedestrian pedestrian = new Pedestrian();
 
-         //pedestrian.dataToSensors();
-         //pedestrian.makeSensorsUnique();
-         //pedestrian.processDataDerby();
+         pedestrian.dataToSensors();
+         pedestrian.makeSensorsUnique();
+         pedestrian.processDataDerby();
          pedestrian.processDataMongo();
      }
 
